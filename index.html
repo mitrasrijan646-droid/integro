@@ -220,7 +220,7 @@
 	</div>
 </section>
 
-<section class="ap-section sectnbx" id="whatSection">
+<section class="ap-section" id="whatSection">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 no-pad">
@@ -234,7 +234,35 @@
 						
 							<div class="what-content">
 								<div class="ap-card" id="whatCard">
+								
+									<div class="prtnrbx">
+										<div>
+											<h4 class="greentxt">Our grand objective</h4>
+											<h1>Three objectives, run at once.</h1>
+										</div>
+										<div>
+											<p>Mine closure fails when it's treated as a single event at the end of a mine's life. Integro treats it as three things running simultaneously.</p>
+											<a href="#" class="dscvrbttnnew">See full approach</a>
+										</div>
+									</div>
 									
+									 <div class="card">
+										<span class="idx">01</span>
+										<h4>Reliable <br/>Data</h4>
+										<p>A centralised record of every active, terminated, abandoned and reclaimed mine.</p>
+									 </div>
+									 
+									 <div class="card">
+										<span class="idx">02</span>
+										<h4>Reclaiming <br/>Abandoned Mines</h4>
+										<p>Waste management, soil and water treatment, landscape restoration.</p>
+									 </div>
+									
+									<div class="card">
+										<span class="idx">03</span>
+										<h4>Reclaiming <br/>Active Mines</h4>
+										<p>The same disciplines, running alongside ongoing extraction, not after it.</p>
+									</div>
 								</div>
 							</div>
 							<div class="clearfix"></div>
@@ -246,6 +274,59 @@
 		</div>
 	</div>
     <!-- Card content -->
+</section>
+
+<section class="fldsctn objctsctn sectnbx">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<div class="objctcntnr">
+					<div class="objctbx">
+						<div>
+							<h4 class="greentxt">What we've learned in the field</h4>
+							<h2>Comparing progressive and post-closure reclamation on the ground.</h2>
+						</div>
+						<div><a href="#" class="dscvrbttnnew">Read the Just Transition case study </a></div>
+					</div>
+					
+					<div class="objctbx"><img src="images/map.png" class="img-responsive" alt=""/></div>
+					
+				</div>
+				
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="cta-section" id="ctaSection">
+	<div class="cta-stripes" aria-hidden="true">
+        <span></span><span></span><span></span>
+    </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="cta-content" id="ctaContent">
+				
+					<div class="cta-text">
+						<h4 class="greentxt">What we've learned in the field</h4>
+						<h3> Mining lessees, government bodies, and research institutions each have a different reason<br/> to work with Integro.</h3>
+						<h2>We'd like to know your cause.</h2>
+						<div><a href="#" class="dscvrbttnnew">Get in Touch</a></div>
+					</div>
+					
+					<div class="cta-icon-wrap" id="ctaIconWrap">
+						<div class="cta-icon" id="ctaIcon" aria-hidden="true">
+							<img src="images/cta-image.png" class="img-responsive" alt=""/>
+						</div>
+					</div>
+					
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
 </section>
 
 <!-- InstanceEndEditable -->
@@ -261,12 +342,34 @@
                     
                     	<div class="footerwrprbx">
                         	<img src="images/logo.svg" class="img-responsive" alt=""/>
-                            <p>Copyright © 2026 <br />All Rights Reserved. Earthen Studio.</p>
+                            <p>Integro Mine Reclamation Pvt. Ltd. builds the singular driving force behind circular mine closure — reclamation, remediation and progressive rehabilitation, run as one.</p>
                         </div>
                         
                         <div class="footerwrprbx">
-                        	<p>Proudly Designed by Erma Consulting</p>
+                        	<h4>COMPANY</h4>
+                            <ul>
+                            	<li><a href="#">Who We Are</a></li>
+                                <li><a href="#">Approach</a></li>
+                                <li><a href="#">Case Study</a></li>
+                            </ul>
                         </div>
+                        
+                        <div class="footerwrprbx">
+                        	<h4>RESOURCES</h4>
+                            <ul>
+                            	<li><a href="#">Data & Impact</a></li>
+                                <li><a href="#">Partner With Us</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footerwrprbx">
+                        	<h4>Connect</h4>
+                            <ul>
+                            	<li><a href="#">Contact</a></li>
+                                <li><a href="#">Partner With Us</a></li>
+                            </ul>
+                        </div>
+                        
                     </div>
                 
                 	<div class="clearfix"></div>
@@ -274,6 +377,18 @@
             </div>
         </div>
     </section>
+    
+    <section class="lwrftr">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-md-12">
+                	<div class="col-sm-6"><p>© 2026 Integro Mine Reclamation Pvt. Ltd. All rights reserved.</p></div>
+                    <div class="col-sm-6"><p class="last-child">An Erma Consulting-designed brand ecosystem.</p></div>
+                	<div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+     </section>
         
 </footer>
 
@@ -393,7 +508,7 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 
 // observe h1 also
-document.querySelectorAll('.objctbx h4, .objctbx h3, .objctbx p').forEach(el => {
+document.querySelectorAll('.objctbx h4, .objctbx h3, .objctbx p, .prtnrbx h4, .prtnrbx h1, .prtnrbx p, .card, .card span, .card h4, .card p, .fldsctn h2').forEach(el => {
     observer.observe(el);
 });
 </script>
@@ -416,11 +531,44 @@ document.querySelectorAll('.objctbx h4, .objctbx h3, .objctbx p').forEach(el => 
         const rect     = section.getBoundingClientRect();
         const viewH    = window.innerHeight;
         const progress = (viewH - rect.top) / (viewH + rect.height);
-        const shift    = (progress - 0.5) * 400;
+        const shift    = (progress - 0.5) * 220;
         bg.style.transform = `translateY(${shift}px)`;
     }
     doParallaxWhat();
     window.addEventListener('scroll', doParallaxWhat, { passive: true });
+}
+</script>
+
+<script>
+{
+    const section = document.getElementById('ctaSection');
+    const content = document.getElementById('ctaContent');
+    const iconWrap = document.getElementById('ctaIconWrap');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) content.classList.add('visible');
+        });
+    }, { threshold: 0.4 });
+    observer.observe(section);
+
+    let ticking = false;
+    function doParallaxCta() {
+        const rect     = section.getBoundingClientRect();
+        const viewH    = window.innerHeight;
+        const progress = (viewH - rect.top) / (viewH + rect.height);
+        const shift    = (progress - 0.5) * 220;
+        iconWrap.style.transform = `translateY(${shift}px)`;
+        ticking = false;
+    }
+    function onScrollCta() {
+        if (!ticking) {
+            requestAnimationFrame(doParallaxCta);
+            ticking = true;
+        }
+    }
+    doParallaxCta();
+    window.addEventListener('scroll', onScrollCta, { passive: true });
 }
 </script>
 
