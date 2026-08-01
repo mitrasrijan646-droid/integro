@@ -226,6 +226,117 @@
 		</div>
 	</div>
 </section>
+
+<section class="objctsctn visnsctn sectnbx">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<div class="objctcntnr">
+					<div class="objctbx">
+						<div class="stage">
+							<div class="leaf-wrap" id="leafWrap">
+								<img id="leafImg" src="images/about/vision-leaf.png" class="img-responsive" alt="Leaf-shaped image of an open-pit mine surrounded by forest" />
+							</div>
+						</div>
+					</div>
+					
+					<div class="objctbx">
+						<div>
+							<h2>Our vision</h2>
+							<h1>To help minimise environmental contamination through sustainable mining.</h1>
+						</div>
+						<div><img src="images/about/repair-restore-img.jpg" class="img-responsive reprimg" alt=""/></div>
+						<div>
+							<p>Two words carry the whole mandate. Repair - he land, the water, the air already affected by extraction. Restore - the site's usability, for a community, an ecosystem, or an economy, once mining is done.</p>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="ap-section gapsctn sectnbx" id="whatSection">
+	<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+						
+							<div class="what-content">
+								<div class="ap-card" id="whatCard">
+								
+									<div class="prtnrbx">
+										<div>
+											<h4 class="greentxt">What we've learned in the field</h4>
+											<h1>The Gap <br/>We Exist to Close</h1>
+										</div>
+										<div>
+											<!-- <p>Mine closure fails when it's treated as a single event at the end of a mine's life. Integro treats it as three things running simultaneously.</p> -->
+											<a href="#" class="dscvrbttnnew">Read the Just Transition case study </a>
+										</div>
+									</div>
+									
+									 <div class="card">
+										<h4>How it's <br/>usually done</h4>
+										<p>One project manager. One contractor, appointed to supply labour for the laborious work of progressive and mine-closure reclamation.</p>
+										<p>That contractor typically has little tacit knowledge of land or mine reclamation — he does only what he's advised to do, as per government guidelines, with no independent technical judgment of his own.</p>
+									 </div>
+									 
+									 <div class="card">
+										<h4>How Integro <br/>works instead</h4>
+										<p>A dedicated reclamation organisation, integrating roughly 25 disciplines — geology, hydrology, agronomy, energy, safety, community management — around one closure strategy, backed by centralised data and continuous monitoring, from the first extraction to the last.</p>
+									 </div>
+									
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+    <!-- Card content -->
+</section>
+
+<section class="cta-section fndrsctn sectnbx" id="ctaSection">
+	<div class="cta-stripes" aria-hidden="true">
+        <span></span><span></span><span></span>
+    </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				
+				<div class="fndrbx">
+					<h1>Founder</h1>
+					<hr/>
+					<h4>Founded on a career spent inside the mining and industrial equipment world.</h4>
+				</div>
+			
+				<div class="cta-content fndrcntnr" id="ctaContent">
+				
+					<div class="cta-text">
+						<p>Integro Mine Reclamation Pvt. Ltd. was founded by Ambalika Dey in 2019. She has spent sixteen years working inside the mining and industrial equipment ecosystem.</p>
+						<p>At PwC — the largest of the Big Four in 2010 — she gained hands-on experience in branding and its analytical dimension, grounded in the discipline of one of the world's leading consulting firms. At CDE Global, an Irish mineral-washing equipment manufacturer, she took on branding for their Indian chapter, learning to work within dynamics entirely different from the parent company's global market. </p>
+					</div>
+					
+					<div class="cta-text">
+						<p>At Tractors India, she was introduced to Caterpillar, one of the world's foremost makers of earth-moving and mining equipment — and it was here that her branding skills evolved to the point of being recognised with a Caterpillar Certified Brand Advocate distinction in 2016, one of only 110 named worldwide that year, selected through the company's own training and examination process.</p>
+						<p>When Tractors India became Gainwell Commosales, Ambalika was part of that transition, designing the new GCPL brand identity from the ground up.</p>
+						<p>That continuity carried into her most defining project, Unnati — Gainwell Commosales' integrated centre, Asia's second and the world's seventh LEED v4 Platinum-certified facility. </p>
+					</div>
+					
+					<div class="cta-text">
+						<p>There, her role went beyond brand design into PMC-level coordination, working alongside architects, civil engineers and interior designers to ensure the brand was built into the building's surfaces and textures, not layered on top of them.</p>
+						<p>She also leads Erma Consulting OPC Pvt. Ltd., a brand ecosystem design firm built on the same principle Integro now applies to reclamation: coordinating specialists across disciplines toward one integrated outcome.</p>
+						<p>At Integro, Ambalika leads strategy, stakeholder relationships and system design; technical delivery runs through the company's own integrated model — 25 interconnected departments, spanning geology, hydrology, agronomy and safety engineering, bound together as one accountable system.</p>
+					</div>
+					
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+</section>
+
 <!-- InstanceEndEditable -->
 
 <footer id="footer">
@@ -405,9 +516,95 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 
 // observe h1 also
-document.querySelectorAll('.objctbx h4, .objctbx h3, .objctbx p, .prtnrbx h4, .prtnrbx h1, .prtnrbx p, .card, .card span, .card h4, .card p, .fldsctn h2').forEach(el => {
+document.querySelectorAll('.objctbx h4, .objctbx h3, .objctbx p, .prtnrbx h4, .prtnrbx h1, .prtnrbx p, .card, .card span, .card h4, .card p, .fldsctn h2, .visnsctn h2, .visnsctn h1, .visnsctn img.reprimg, .fndrbx h1, .fndrbx h4, .fndrcntnr p').forEach(el => {
     observer.observe(el);
 });
+</script>
+<script type="text/javascript">
+  const wrap = document.getElementById('leafWrap');
+ 
+  // Triggers once per entry into view, using a fixed CSS transition duration
+  // (see --duration in the CSS above) instead of tying progress to scroll
+  // position 1:1 — this keeps the speed consistent no matter how fast
+  // someone scrolls.
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        wrap.classList.add('in-view');
+      } else {
+        // reset so it can replay next time it scrolls into view
+        wrap.classList.remove('in-view');
+      }
+    });
+  }, { threshold: 0.35 });
+ 
+  io.observe(wrap);
+ 
+  btn.addEventListener('click', () => {
+    wrap.classList.remove('in-view');
+    // force reflow so the browser registers the removed class
+    // before re-adding it, otherwise the transition won't replay
+    void wrap.offsetWidth;
+    wrap.classList.add('in-view');
+  });
+</script>
+<script type="text/javascript">
+/* ── What Section Parallax ── */
+{
+    const section = document.getElementById('whatSection');
+    const card    = document.getElementById('whatCard');
+    const bg      = document.getElementById('whatBg');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) card.classList.add('visible');
+        });
+    }, { threshold: 0.55 });
+    observer.observe(section);
+
+    function doParallaxWhat() {
+        const rect     = section.getBoundingClientRect();
+        const viewH    = window.innerHeight;
+        const progress = (viewH - rect.top) / (viewH + rect.height);
+        const shift    = (progress - 0.5) * 220;
+        bg.style.transform = `translateY(${shift}px)`;
+    }
+    doParallaxWhat();
+    window.addEventListener('scroll', doParallaxWhat, { passive: true });
+}
+</script>
+
+<script>
+{
+    const section = document.getElementById('ctaSection');
+    const content = document.getElementById('ctaContent');
+    const iconWrap = document.getElementById('ctaIconWrap');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) content.classList.add('visible');
+        });
+    }, { threshold: 0.4 });
+    observer.observe(section);
+
+    let ticking = false;
+    function doParallaxCta() {
+        const rect     = section.getBoundingClientRect();
+        const viewH    = window.innerHeight;
+        const progress = (viewH - rect.top) / (viewH + rect.height);
+        const shift    = (progress - 0.5) * 220;
+        iconWrap.style.transform = `translateY(${shift}px)`;
+        ticking = false;
+    }
+    function onScrollCta() {
+        if (!ticking) {
+            requestAnimationFrame(doParallaxCta);
+            ticking = true;
+        }
+    }
+    doParallaxCta();
+    window.addEventListener('scroll', onScrollCta, { passive: true });
+}
 </script>
 <!-- InstanceEndEditable -->
 </body>
