@@ -193,12 +193,12 @@ a:focus, a:hover {
 #myNavbar li a:hover{transform: translateY(-2px); color:#333634;}
 .navbar::before { opacity: 1;}
 .scrolled{
-	background:rgba(0,0,0, .45);
+	background:rgba(0,0,0, .40);
     transition: 0.5s;
     width: 100%;
     padding:10px 0;
-	backdrop-filter: blur(25px);
-	-webkit-backdrop-filter: blur(25px);
+	backdrop-filter:blur(20px);
+	-webkit-backdrop-filter:blur(20px);
 }
 .navbar.scrolled #myNavbar ul.navbar-nav li a{color:#FFF;}
 .navbar.scrolled #myNavbar ul.navbar-nav li a:hover{color:#5b8407;}
@@ -855,9 +855,9 @@ a:focus, a:hover {
 .gvrnancsctnbx ul{padding-inline-start:0;}
 .gvrnancsctnbx ul li{
 	font-size:25px; 
-	line-height:40px; 
+	line-height:32px; 
 	font-weight:300; 
-	padding:5px 0;
+	padding:10px 0;
 	list-style-type:none;
 	opacity: 0;
 	font-family: "helvetica-neue-lt-pro",sans-serif;
