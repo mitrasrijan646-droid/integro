@@ -821,6 +821,51 @@ a:focus, a:hover {
     transition: opacity 0.9s ease, transform 0.9s ease;
 }
 .fndrcntnr p.animate{opacity: 1; transform: translateY(0px);}
+.gvrnancsctn{
+	display:grid;
+	grid-template-columns:1fr 2fr;
+	align-items:flex-start;
+	gap:40px;
+}
+.gvrnancsctn h2{
+	text-align:left;
+	color:#5b8407;
+	font-weight:300;
+	opacity: 0;
+	transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.gvrnancsctn h2.animate{opacity: 1; transform: translateY(0px);}
+.gvrnancsctnbx{
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:15px;
+}
+.gvrnancsctnbx h1{
+	font-family: "helvetica-neue-lt-pro",sans-serif;
+	font-weight:700;
+	font-size:40px;
+	opacity: 0;
+	transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.gvrnancsctnbx h1.animate{opacity: 1; transform: translateY(0px);}
+.gvrnancsctnbx ul{padding-inline-start:0;}
+.gvrnancsctnbx ul li{
+	font-size:25px; 
+	line-height:40px; 
+	font-weight:300; 
+	padding:5px 0;
+	list-style-type:none;
+	opacity: 0;
+	font-family: "helvetica-neue-lt-pro",sans-serif;
+	transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.gvrnancsctnbx ul li.animate{opacity: 1; transform: translateY(0px);}
+.gvrnancsctnbx ul li span{font-weight:700;}
 /* MEDIA QUERY CSS STARTS HERE */
 @media only screen and (orientation:portrait){}
 @media screen and (max-width:1366px){}
