@@ -145,7 +145,7 @@
 </div>
 
 <!-- InstanceBeginEditable name="banner" -->
-<section class="bnnrsctn innrbnnr">
+<section class="bnnrsctn innrbnnr casebanner">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 no-pad">
@@ -181,7 +181,7 @@
 								</div>
 								
 								<div class="imgbx">
-									<img src="images/approach/approach-banner.jpg" class="img-responsive" alt=""/>
+									<img src="images/case-study/case-study-banner.webp" class="img-responsive" alt=""/>
 								</div>
 								
 							</div>
@@ -197,16 +197,110 @@
 <!-- InstanceEndEditable -->
 
 <!-- InstanceBeginEditable name="EditRegion4" -->
+<section class="ap-section casebannr" id="whatSection">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 no-pad">
+				<!-- Regular img tag for parallax -->
+				<div class="ap-bg" id="whatBg">
+					<img src="images/case-study/coal-hand.jpg" alt="" class="ap-bg-img" />
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5">
+						
+							<div class="what-content">
+								<div class="ap-card" id="whatCard">
+									<h4 class="greentxt">Field Work</h4>
+									<h2>Just Transition,<br/> Observed First-Hand —<br/> Penden Cement, Bhutan</h2>
+									<p class="ap-desc">In 2023, Integro conducted an independent information exchange visit to Penden Cement Authority Ltd., in Gomtu, Samtse District, Bhutan — not as a contracted engagement, but as a technical field study, to see what a just transition away from coal actually looks like on the ground.</p>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+    <!-- Card content -->
+</section>
 
-<section class="sectnbx">
+
+<section class="studysctn-container sectnbx">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
+			
+				<div class="observation">
+					<div class="num">01<span>Coal transition</span></div>
+					<div class="txtbx">
+						<h3>A Cement Plant Trying to Leave Coal Behind</h3>
+						<p>Penden Cement has been planting Beema Bamboo across its estate — partly to meet government reclamation regulation, partly to reduce its dependence on imported, lower-quality Indian coal, and partly to grow its own biofuel and cut recurring costs. It's a real, if early, attempt at a coal transition happening at plant level, not policy level.</p>
+					</div>
+				</div>
+				
+				<div class="observation">
+					<div class="num">02<span>Coal transition</span></div>
+					<div class="txtbx">
+						<div class="observsctn">
+							<div class="observsctnbx">
+								<h3>The Same Plant Species, Two Very Different Outcomes</h3>
+								<p>Two Beema Bamboo plantations, on two parts of the same estate.</p>
+								<p><strong>In Pagli</strong> — inside the active mine boundary, but on ground undisturbed by mining — bamboo planted eighteen months ago is healthy and thriving.</p>
+								<p><strong>In Uttarey</strong> — on the closed mine, reclaimed four years ago — bamboo is unhealthy, despite two and a half years' head start.</p>
+								<img src="images/case-study/case-study-image-two.jpg" class="img-responsive bordradius" alt=""/>
+							</div>
+							<div class="observsctnbx">
+								<div class="plningcntnrbx tllbx card bordradius">
+									<h4>What this tells us</h4>
+									<p>The difference wasn't time. Something more fundamental explains why the newer planting is outperforming the older one — and it's something we walk mining lessees and policy partners through directly, rather than publish here.</p>
+								</div>
+								<img src="images/case-study/case-study-image-three.jpg" class="img-responsive bordradius" alt=""/>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="observation last-child">
+					<div class="num">03<span>Township</span></div>
+					<div class="txtbx">
+						<h3>A Township Disconnected From Its Own Reclamation</h3>
+						<p>Walking Gomtu made a structural problem visible: the reclamation happening on the mined land, the operating cement plant, and the township where people actually live are effectively three separate worlds, with little connecting them.</p>
+						<p>Some areas — the police station, sections of the staff quarters - are genuinely green and well kept. Others sit close to an active haul road, coated in limestone dust, trees visibly dying along the route the trucks take.</p>
+					</div>
+				</div>
 			
 				<div class="clearfix"></div>
 			</div>
 		</div>
 	</div>
+	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="projects-gallery">
+					<div class="project-card">
+						<img src="images/case-study/project-image-one.jpg" class="img-responsive" alt=""/>
+					</div>
+					<div class="project-card">
+						<img src="images/case-study/project-image-two.jpg" class="img-responsive" alt=""/>
+					</div>
+					<div class="project-card">
+						<img src="images/case-study/project-image-three.jpg" class="img-responsive" alt=""/>
+					</div>
+					<div class="project-card">
+						<img src="images/case-study/project-image-four.jpg" class="img-responsive" alt=""/>
+					</div>
+					
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	
 </section>
 
 <section class="deep-blue sectnbx">
@@ -402,6 +496,21 @@ gsap.to(".logo-parallax", {
 
 <!-- InstanceBeginEditable name="EditRegion6" -->
 <script type="text/javascript">
+	gsap.from(".project-card", {
+    opacity:0,
+    scale:1.2,
+    y:50,
+    duration:1.5,
+    stagger:0.2,
+    ease:"expo.out",
+    scrollTrigger:{
+        trigger:".projects-gallery",
+        start:"top 75%"
+    }
+});
+</script>
+
+<script type="text/javascript">
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -413,9 +522,34 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 
 // observe h1 also
-document.querySelectorAll('.objctbx h4, .objctbx h3, .objctbx p, .prtnrbx h4, .prtnrbx h1, .prtnrbx p, .card, .card span, .card h4, .card p, .fldsctn h2, .visnsctn h2, .visnsctn h1, .visnsctn img.reprimg, .fndrbx h1, .fndrbx h4, .fndrcntnr p, .gvrnancsctn h2, .gvrnancsctnbx h1, .gvrnancsctnbx ul li, .worksctnbx h1, .prgrphbx, .lower-footer .gvrnancsctnbx h3').forEach(el => {
+document.querySelectorAll('.objctbx h4, .objctbx h3, .objctbx p, .prtnrbx h4, .prtnrbx h1, .prtnrbx p, .card, .card span, .card h4, .card p, .fldsctn h2, .visnsctn h2, .visnsctn h1, .visnsctn img.reprimg, .fndrbx h1, .fndrbx h4, .fndrcntnr p, .gvrnancsctn h2, .gvrnancsctnbx h1, .gvrnancsctnbx ul li, .worksctnbx h1, .prgrphbx, .lower-footer .gvrnancsctnbx h3, .observation .num, .observation .num span, .observation .txtbx, .observation .txtbx h3, .observsctnbx .tllbx:before').forEach(el => {
     observer.observe(el);
 });
+</script>
+<script type="text/javascript">
+/* ── What Section Parallax ── */
+{
+    const section = document.getElementById('whatSection');
+    const card    = document.getElementById('whatCard');
+    const bg      = document.getElementById('whatBg');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) card.classList.add('visible');
+        });
+    }, { threshold: 0.55 });
+    observer.observe(section);
+
+    function doParallaxWhat() {
+        const rect     = section.getBoundingClientRect();
+        const viewH    = window.innerHeight;
+        const progress = (viewH - rect.top) / (viewH + rect.height);
+        const shift    = (progress - 0.5) * 400;
+        bg.style.transform = `translateY(${shift}px)`;
+    }
+    doParallaxWhat();
+    window.addEventListener('scroll', doParallaxWhat, { passive: true });
+}
 </script>
 <!-- InstanceEndEditable -->
 </body>
