@@ -53,6 +53,7 @@ h4{
 	font-size:16px;
 	font-weight:400;
 	color: #010000;
+	margin:0;
 }
 p{
 	line-height:24px;
@@ -62,7 +63,7 @@ p{
 	margin-bottom:10px;
 	letter-spacing:0;
 	font-family:"helvetica-neue-lt-pro";
-	font-weight:400;
+	font-weight:300;
 }
 a{line-height:17px; outline:none; color:#010000; font-family:"helvetica-neue-lt-pro"; font-weight:300; text-decoration: none;}
 a:focus, a:hover {
@@ -185,7 +186,7 @@ a:focus, a:hover {
 .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{color:#b7944c;}
 }
 /* NEW CSS STARTS HERE */
-.greentxt{color:#93bd3d; font-size:14px; text-align:left;}
+.greentxt{color:#93bd3d; font-size:14px; text-align:left; letter-spacing: 1px;}
 .navbar-header{padding-top:18px;}
 #myNavbar ul{margin-top:10px; float:right;}
 #myNavbar li a{color:#FFF; transition: all 0.3s ease; font-weight:700;}
@@ -209,7 +210,7 @@ a:focus, a:hover {
 .breadcrumb li.active{color:#FFF;}
 .container{max-width:1300px!important; width: 100% !important;}
 .sectnbx{padding:100px 0;}
-.bordradius{border-radius:20px;}
+.bordradius{border-radius:10px;}
 .sidenav{margin-bottom:30px; background:#f6f5f1; padding:12px 0; border-radius: 6px;}
 .sidenav h1.cntxt{margin: 15px 20px;}
 .sidenav ul{padding-inline-start:0;}
@@ -308,6 +309,21 @@ a:focus, a:hover {
     align-items: center;
     gap: 15px;
 }
+.button-one{
+	display: inline-flex;
+	align-items: center;
+	gap:25px;
+	font-size: 16px;
+	padding:20px 30px 20px 20px;
+	position: relative;
+	overflow: hidden;
+	background:#333634;
+	color: #FFF;
+	margin-top:0;
+	border-radius:10px;
+	border:1px solid #93bd3d;
+	transition: all 0.3s ease;
+}
 .dscvrbttnnew {
 	display: inline-flex;
 	align-items: center;
@@ -322,22 +338,8 @@ a:focus, a:hover {
 	border-radius:10px;
 	transition: all 0.3s ease;
 }
-.dscvrbttnnew::before {
-  content: '';
-  position: absolute;
-  inset:-1px;
-  background: rgba(51, 54, 52, 0.48);
-  transform: translateX(-100%);
-  transition: transform 0.7s ease;
-  z-index: 0;
-}
-.dscvrbttnnew span,
-.dscvrbttnnew svg {
-  position: relative;
-  z-index: 1;
-}
-.dscvrbttnnew:hover::before { transform: translateX(0);}
 .dscvrbttnnew:hover {border-color: rgba(0, 0, 0, 0.5); color:#FFF; transform: translateY(-2px);}
+.button-one:hover {border-color: rgba(0, 0, 0, 0.5); background:#93bd3d; color:#FFF; transform: translateY(-2px);}
 .bnnrsctn{width:100%; position: relative; overflow: hidden; margin-top:0;}
 .bnnrsctn .owl-carousel1 .evntbxbnnr img{
 	width:100%;
@@ -848,6 +850,7 @@ a:focus, a:hover {
 	font-family: "helvetica-neue-lt-pro",sans-serif;
 	font-weight:700;
 	font-size:40px;
+	text-align:left;
 	opacity: 0;
 	transform: translateY(30px);
     transition: opacity 0.9s ease, transform 0.9s ease;
@@ -867,6 +870,73 @@ a:focus, a:hover {
 }
 .gvrnancsctnbx ul li.animate{opacity: 1; transform: translateY(0px);}
 .gvrnancsctnbx ul li span{font-weight:700;}
+.worksctnbx{background:#FFF;}
+.worksctnbx h1{
+	text-align:left; 
+	font-size:40px; 
+	font-family: "helvetica-neue-lt-pro",sans-serif; 
+	font-weight:700;
+	opacity: 0;
+	transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.worksctnbx h1.animate{opacity: 1; transform: translateY(0px);}
+.worksctnbx a.dscvrbttnnew{
+	background:#5b8407;
+	font-weight:700;
+	letter-spacing:1px;
+}
+.worksctnbx a.button-one{
+	background:#FFF;
+	border:1px solid #5b8407;
+	color:#000;
+	font-weight:700;
+}
+.grey-section .ap-card{
+	display: grid;
+    gap: 20px;
+    margin: 60px 0 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.grey-section .ap-card span{font-weight:400; font-size:16px;}
+.grey-section h2{
+	text-align:left;
+	color:#93bd3d;
+	font-weight:700;
+}
+.grey-section .card p{color:#000; font-style:normal;}
+.grey-section p{color:#FFF; font-style:italic;}
+.plningsctn h2{font-weight:700; text-transform:inherit;}
+.plningcntnr{
+	display: grid;
+    gap:20px;
+	align-items: stretch;
+    margin: 60px 0;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.plningcntnrbx.card{background:#efefef; gap:60px; align-items: flex-start; position:relative;}
+.plningcntnrbx.card img{
+	position: absolute;
+    right: 15px;
+    top:35px;
+}
+.plningcntnrbx.card span{color:#93bd3d;}
+.plningcntnrbx.card h4{font-weight:700; color:#000; margin-bottom:15px;}
+.dlvrysctn{padding:80px 0; grid-template-columns:1fr 1fr;}
+.dlvrysctn h3{font-size:40px; line-height:45px;}
+.dlvrysctn h4.whttxt{color:#FFF; font-size:20px; font-weight:300; letter-spacing:1px;}
+.dlvrysctn p{color:#FFF;}
+.gvrnancsctnbx a.dscvrbttnnew{
+	background:#5b8407;
+	font-weight:700;
+	letter-spacing:1px;
+}
+.gvrnancsctnbx a.button-one{
+	background:transparent;
+	border:1px solid #5b8407;
+	color:#000;
+	font-weight:700;
+}
 /* MEDIA QUERY CSS STARTS HERE */
 @media only screen and (orientation:portrait){}
 @media screen and (max-width:1366px){}
