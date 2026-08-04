@@ -49,7 +49,7 @@
                             <li><a href="../our-approach.html" class="e">Our Approach</a></li>
                             <li><a href="../case-study.html" class="">Just Transition Case Study</a></li>
                             <li><a href="../data-impact.html" class="">Data & Impact</a></li>
-                            <li><a href="#" class="">Partner with us</a></li>
+                            <li><a href="../partner.html" class="">Partner with us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -179,15 +179,15 @@
                         	<h4>RESOURCES</h4>
                             <ul>
                             	<li><a href="../data-impact.html">Data & Impact</a></li>
-                                <li><a href="#">Partner With Us</a></li>
+                                <li><a href="../partner.html">Partner With Us</a></li>
                             </ul>
                         </div>
                         
                         <div class="footerwrprbx">
                         	<h4>Connect</h4>
                             <ul>
-                            	<li><a href="#">Contact</a></li>
-                                <li><a href="#">Partner With Us</a></li>
+                            	<li><a href="../partner.html">Contact</a></li>
+                                <li><a href="../partner.html">Partner With Us</a></li>
                             </ul>
                         </div>
                         
