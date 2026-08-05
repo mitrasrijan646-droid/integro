@@ -1372,12 +1372,24 @@ a:focus, a:hover {
         flex-direction: column;
 	}
 	.bnnrbxtxt:last-child{justify-content: flex-start;}
+	#whatSection .ap-card{grid-template-columns: 2fr 1fr;}
 }
 @media screen and (max-width:767px){
 	.bnnrbxtxt:last-child{flex-direction: column;}
+	.cta-content{grid-template-columns:1fr;}
+	.footerwrpr{grid-template-columns: 2fr 1fr;}
+	.objctcntnr{grid-template-columns:1fr;}
+	.cta-stripes{width:50%;}
+	.fldsctn .objctcntnr {
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
 }
 @media screen and (max-width:540px){}
-@media (max-width:480px){}
+@media (max-width:480px){
+	#whatSection .ap-card { grid-template-columns: 1fr;}
+    .bnnrbxtxt h1{font-size:30px;}
+}
 @media (max-width:390px){}
 @media (max-width:375px){}
 @media (max-width:320px){}
