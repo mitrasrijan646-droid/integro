@@ -186,7 +186,7 @@ a:focus, a:hover {
 .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{color:#b7944c;}
 }
 /* NEW CSS STARTS HERE */
-.greentxt{color:#93bd3d; font-size:14px; text-align:left; letter-spacing: 1px;}
+.greentxt{color:#93bd3d; font-size:14px; text-align:left; letter-spacing:1px; margin-bottom: 10px;}
 .navbar-header{padding-top:18px;}
 #myNavbar ul{margin-top:10px; float:right;}
 #myNavbar li a{color:#FFF; transition: all 0.3s ease; font-weight:700;}
@@ -726,7 +726,8 @@ a:focus, a:hover {
 .footerwrprbx h4{color:#FFF; font-weight:200; color:#93bd3d; text-transform:uppercase;}
 .footerwrprbx ul{padding-inline-start:0;}
 .footerwrprbx ul li{list-style-type:none; padding:5px 0;}
-.footerwrprbx ul li a{color:#FFF;}
+.footerwrprbx ul li a{color:#FFF; transition: all 0.3s ease;}
+.footerwrprbx ul li a:hover{color:#93bd3d; transform: translateY(-2px);}
 .lwrftr{padding:30px 0;}
 .lwrftr p{color:#a1a1a1; font-weight:200;}
 .lwrftr p.last-child{text-align:right;}
@@ -1147,7 +1148,6 @@ a:focus, a:hover {
     padding: 0;
     margin: 80px auto 0;
   }
- 
   .lowercontnrbx{
     background: #597e41;
     display: flex;
@@ -1156,19 +1156,16 @@ a:focus, a:hover {
     padding: 20px 34px;
     border-radius: 50px;
     white-space: nowrap;
- 
     /*  animation start state */
     opacity: 0;
     transform: translateY(24px);
     transition: opacity .6s ease, transform .6s ease;
   }
- 
   .lowercontnrbx p{
     color: #FFF;
     margin: 0;
     text-align: center;
   }
- 
   /* arrow connector between pills */
   .flow-arrow{
     color: #8fae76;
@@ -1180,13 +1177,8 @@ a:focus, a:hover {
     transform: scale(.5);
     transition: opacity .4s ease, transform .4s ease;
   }
- 
   /* ===== REVEAL STATE (added by JS via IntersectionObserver) ===== */
-  .flow-item.in-view{
-    opacity: 1 !important;
-    transform: translateY(0) scale(1) !important;
-  }
- 
+  .flow-item.in-view{ opacity: 1 !important; transform: translateY(0) scale(1) !important;}
   /* staggered delay per item, in DOM order */
 	.lowercontnr .flow-item:nth-child(1)  { transition-delay: .05s; }
   .lowercontnr .flow-item:nth-child(2)  { transition-delay: .15s; }
@@ -1201,7 +1193,6 @@ a:focus, a:hover {
   .lowercontnr .flow-item:nth-child(11) { transition-delay: 1.05s; }
   .lowercontnr .flow-item:nth-child(12) { transition-delay: 1.15s; }
   .lowercontnr .flow-item:nth-child(13) { transition-delay: 1.25s; }
- 
   /* responsive: let pills wrap comfortably and wrap text on small screens */
 .blacksctn{
 	background-color:#000;
@@ -1269,6 +1260,88 @@ a:focus, a:hover {
 .byndsctn .tllbx{border-radius:0 0 10px 10px;}
 .byndsctn .tllbx p{color:#000 !important; font-size:20px; font-weight:700;}
 .deep-green{background:#004400;}
+.govrnanc-row{grid-template-columns:1.5fr 1fr;}
+.govrnanc-row .objctbx h3{
+	color:#93bd3d;
+	font-size:40px;
+	text-transform:uppercase;
+}
+.govrnanc-row .objctbx p{color:#FFF; font-weight:300;}
+.govrnanc-row .objctbx p a{color:#93bd3d; text-decoration:underline;}
+.visnsctn .structure-sctn{align-items:center;}
+.govrnance-wrapper{
+	display:grid;
+	grid-template-columns: 1.5fr 1.3fr 1.3fr;
+	gap:50px;
+	align-items:stretch;
+}
+.govrnance-wrapper-box h2{
+	text-align:left;
+	font-weight:700;
+	opacity: 0;
+	transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.govrnance-wrapper-box h2.animate{opacity: 1; transform: translateY(0px);}
+.green-container{background:#79a422;}
+.green-wrapper{
+	display:grid;
+	grid-template-columns: 1fr 2.5fr;
+    align-items: flex-start;
+    gap: 80px;
+}
+.green-wrapper-box{
+	display:flex;
+	flex-direction:column;
+	gap:25px;
+}
+.green-wrapper-box h2{
+	text-align:left;
+	color:#FFF;
+	font-weight:300;
+	opacity: 0;
+	transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.green-wrapper-box h2.animate{opacity: 1; transform: translateY(0px);}
+.green-wrapper-box p{
+	color:#FFF; 
+	margin-bottom:0;
+	opacity: 0;
+	transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.green-wrapper-box p.animate{opacity: 1; transform: translateY(0px);}
+.compliance#whatSection {
+	min-height:100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.compliance#whatSection .ap-card{grid-template-columns:1fr;}
+/* .compliance#whatSection .ap-bg-img{top:-50px;} */
+.compliance#whatSection .ap-bg-img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    object-position:15%;
+    display: block;
+}
+.compliance .byndsctn .byndbx:last-child{background:#f0f0f0; border-radius:15px;}
+.compliance .whitebx{ background:#f0f0f0;}
+.compliance .whitebx h2{text-align:left; color:#5b8407; font-weight:400;}
+.compliance .whitebx h1{text-align:left; font-size:40px; font-family: "helvetica-neue-lt-pro",sans-serif; font-weight:700;}
+.compliancebox{grid-template-columns:1fr 1.1fr;}
+.conduct-section{background:#d1d1d1;}
+.conduct-section h2{
+	opacity: 0;
+	transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+	text-align:left;
+	font-weight:300;
+}
+.conduct-section hr{border-top:1px solid #aebf8b;}
+.conduct-section h2.animate{opacity: 1; transform: translateY(0px);}
 .partner-section{
 	margin-top:100px;
 	display:grid;
