@@ -188,11 +188,12 @@ a:focus, a:hover {
 /* NEW CSS STARTS HERE */
 .greentxt{color:#93bd3d; font-size:14px; text-align:left; letter-spacing:1px; margin-bottom: 10px;}
 .blacktext{
-	color:#000;
+	color:#FFF;
 	font-size:14px; 
 	text-align:left; 
 	letter-spacing:1px; 
 	margin-bottom: 10px;
+	font-weight:700;
 }
 .navbar-header{padding-top:18px;}
 #myNavbar ul{margin-top:10px; float:right;}
