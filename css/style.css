@@ -1154,7 +1154,8 @@ a:focus, a:hover {
     transition: opacity 0.9s ease, transform 0.9s ease;
 }
 .policiesbox.animate{opacity: 1; transform: translateY(0px);}
-.policiesbox h3{font-size:25px;}
+.policiesbox h4{font-size:20px; color:#FFF; font-weight:200;}
+.policiesbox h3{font-size:25px; line-height:27px;}
 .policiesbox p{
 	margin-bottom:0;
 	opacity: 0;
@@ -1523,6 +1524,18 @@ a:focus, a:hover {
 }
 .reclmdtxtbx.card{ gap:35px;}
 .reclmdtxtbx.card h3{text-align:left; margin-bottom:10px; color:#93bd3d;}
+.natnlcntnr{background:#FFF;}
+.natnlcntnr .gvrnancsctn{grid-template-columns:1.1fr 3fr;}
+.natnlcntnr .gvrnancsctnbx h1{color:#76a712; font-size:90px; font-weight:400; font-family: "helvetica-neue-lt-pro",sans-serif; }
+.natnlcntnr .gvrnancsctnbx h2{color:#000;}
+.natnlcntnr .gvrnancsctnbx h3{
+	text-align:left;
+	text-transform:capitalize;
+	opacity: 0;
+	transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.natnlcntnr .gvrnancsctnbx h3.animate{opacity:1; transform: translateY(0px);}
 /* MEDIA QUERY CSS STARTS HERE */
 @media only screen and (orientation:portrait){}
 @media screen and (max-width:1366px){}
