@@ -1140,7 +1140,7 @@ a:focus, a:hover {
 	grid-template-columns: repeat(5, 1fr); 
 	gap:5px; 
 	padding:0;
-	margin:80px 0 0;
+	margin:80px 0 30px;
 }
 .policiesbox{
 	background:#76a712;
@@ -1155,15 +1155,15 @@ a:focus, a:hover {
 }
 .policiesbox.animate{opacity: 1; transform: translateY(0px);}
 .policiesbox h4{font-size:20px; color:#FFF; font-weight:200;}
-.policiesbox h3{font-size:25px; line-height:27px;}
+.policiesbox h3{font-size:25px; line-height:27px; color:#FFF;}
 .policiesbox p{
 	margin-bottom:0;
 	opacity: 0;
 	transform: translateY(30px);
     transition: opacity 0.9s ease, transform 0.9s ease;
+	color:#415f03;
 }
 .policiesbox p.animate{opacity: 1; transform: translateY(0px);}
-.policiesbox h3, .policiesbox p{color:#FFF;}
 .lowersctn h2{
 	color:#5b8407;
 	text-align:left;
