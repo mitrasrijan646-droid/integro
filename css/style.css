@@ -187,6 +187,13 @@ a:focus, a:hover {
 }
 /* NEW CSS STARTS HERE */
 .greentxt{color:#93bd3d; font-size:14px; text-align:left; letter-spacing:1px; margin-bottom: 10px;}
+.blacktext{
+	color:#000;
+	font-size:14px; 
+	text-align:left; 
+	letter-spacing:1px; 
+	margin-bottom: 10px;
+}
 .navbar-header{padding-top:18px;}
 #myNavbar ul{margin-top:10px; float:right;}
 #myNavbar li a{color:#FFF; transition: all 0.3s ease; font-weight:700;}
@@ -599,7 +606,6 @@ a:focus, a:hover {
     transition: opacity 0.9s ease, transform 0.9s ease;
 }
 .fldsctn h2.animate{opacity: 1; transform: translateY(0px);}
-
     /* ── CTA Section Layout ── */
     .cta-section {
         position: relative;
@@ -610,12 +616,10 @@ a:focus, a:hover {
         align-items: center;
         padding: 0 0;
     }
-
     .cta-section .container {
         position: relative;
         z-index: 2;
     }
-
     .cta-stripes {
         position: absolute;
         top: 0;
@@ -626,7 +630,6 @@ a:focus, a:hover {
         z-index: 0;
         pointer-events: none;
     }
-
     .cta-stripes span { flex: 1; height: 100%; }
     .cta-stripes span:nth-child(1) { background: rgba(107, 149, 20, 0.99); }
     .cta-stripes span:nth-child(2) { background: rgba(121, 164, 34, 0.99); }
@@ -663,9 +666,7 @@ a:focus, a:hover {
         transform: translateY(-3px);
         color: #fff;
     }
-
     .cta-icon-wrap { will-change: transform; }
-
     .cta-icon {
         position: relative;
         opacity: 0;
@@ -673,7 +674,6 @@ a:focus, a:hover {
         transition: opacity 1.1s ease 0.2s, transform 1.1s ease 0.2s;
     }
     .cta-content.visible .cta-icon { opacity: 1; transform: scale(1); }
-
     .cta-icon svg {
         width: 100%;
         max-width: 340px;
@@ -681,18 +681,14 @@ a:focus, a:hover {
         display: block;
         margin: 0 auto;
     }
-
     .icon-path { fill: rgba(255, 255, 255, 0.14); }
     .icon-puzzle { fill: rgba(255, 255, 255, 0.22); }
-
     .cta-content.visible .icon-puzzle { animation: puzzlePulse 2.4s ease-in-out 0.6s 1; }
-
     @keyframes puzzlePulse {
         0%   { transform: scale(0.85); opacity: 0; }
         60%  { transform: scale(1.05); opacity: 1; }
         100% { transform: scale(1); opacity: 1; }
     }
-
     .scroll-hint {
         position: fixed;
         top: 20px;
@@ -923,10 +919,55 @@ a:focus, a:hover {
 }
 .plningcntnrbx.card span{color:#93bd3d;}
 .plningcntnrbx.card h4{font-weight:700; color:#000; margin-bottom:15px;}
-.dlvrysctn{padding:80px 0; grid-template-columns:1fr 1fr;}
+.dlvrysctn{padding:80px 0; grid-template-columns:3.5fr 1fr;}
 .dlvrysctn h3{font-size:40px; line-height:45px;}
 .dlvrysctn h4.whttxt{color:#FFF; font-size:20px; font-weight:300; letter-spacing:1px;}
-.dlvrysctn p{color:#FFF;}
+.dlvrysctn h2{font-size:35px;}
+.dlvrysctn p{color:#FFF; font-weight:200; letter-spacing:.9px;}
+.cta-content-box{
+	display:grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap:30px;
+	margin-bottom:50px;
+	align-items:stretch;
+}
+.cta-content-box .row-box{
+	border-left:6px solid #93bd3d; 
+	padding:0 20px;
+	display:flex;
+	flex-direction:column;
+	gap:20px;
+	opacity: 0;
+	transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.cta-content-box .row-box.animate{opacity: 1; transform: translateY(0px);}
+.cta-content-box .row-box h3{
+	color:#93bd3d; 
+	text-align:left; 
+	font-weight:700; 
+	font-size:22px;
+	opacity: 0;
+	transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.cta-content-box .row-box h3.animate{opacity: 1; transform: translateY(0px);}
+.cta-content-box .row-box p{
+	color:#FFF;
+	opacity: 0;
+	transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.cta-content-box .row-box p.animate{opacity: 1; transform: translateY(0px);}
+.delivrcntnr{height:900px;}
+.delivrcntnr p{
+	color:#FFF; 
+	font-weight:300;
+	opacity: 0;
+	transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.delivrcntnr p.animate{opacity: 1; transform: translateY(0px);}
 .gvrnancsctnbx a.dscvrbttnnew{
 	background:#5b8407;
 	font-weight:700;
@@ -1180,7 +1221,7 @@ a:focus, a:hover {
   /* ===== REVEAL STATE (added by JS via IntersectionObserver) ===== */
   .flow-item.in-view{ opacity: 1 !important; transform: translateY(0) scale(1) !important;}
   /* staggered delay per item, in DOM order */
-	.lowercontnr .flow-item:nth-child(1)  { transition-delay: .05s; }
+  .lowercontnr .flow-item:nth-child(1)  { transition-delay: .05s; }
   .lowercontnr .flow-item:nth-child(2)  { transition-delay: .15s; }
   .lowercontnr .flow-item:nth-child(3)  { transition-delay: .25s; }
   .lowercontnr .flow-item:nth-child(4)  { transition-delay: .35s; }
@@ -1426,6 +1467,58 @@ a:focus, a:hover {
 	transition: all 0.3s ease;
 }
 .submit-btn:hover{transform: translateY(-2px);}
+.worksctnbx .workcntnrbx{grid-template-columns:1fr 1fr;}
+.reclaimed-container{
+	background-color:#939598;
+	background-image:url(../images/approach/reclaimed.png);
+	background-attachment:fixed;
+	background-position:left bottom;
+	background-repeat:no-repeat;
+}
+.reclaimedsctn h1{
+	color:#FFF;
+	opacity: 0;
+	transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.reclaimedsctn h1.animate{opacity:1; transform: translateY(0px);}
+.reclaimedsctn{justify-items: end; gap:80px;}
+.reclaimedsctn .partner-section{
+	display:flex;
+	flex-wrap: wrap;
+	gap:30px;
+	justify-content: flex-end;
+    justify-items: end;
+	margin-top:0;
+}
+.reclaimedsctn .partner-section .plningcntnrbx.card {
+    padding-top:40px;
+    gap: 20px;
+    flex: 0 32%;
+}
+.reclaimedsctn .partner-section .plningcntnrbx.card h3{color:#93bd3d; font-size:16px; font-weight:200;}
+.reclaimedsctn .partner-section .plningcntnrbx.card img{left: 290px; top:-45px;}
+.reclmtn-section{
+	background-image:url(../images/approach/mining-plan-img.jpg);
+	background-attachment:fixed;
+	background-position:right bottom;
+	background-repeat:no-repeat;
+}
+.reclmtnbx{
+	display:flex;
+	flex-direction:column;
+	gap:70px;
+}
+.reclmtnbx h4{color:#FFF; font-weight:700; margin-bottom:10px;}
+.reclmtnbx h1{
+	text-align:left;
+	color:#FFF;
+	font-size:40px;
+	font-weight:700;
+	font-family: "helvetica-neue-lt-pro",sans-serif;
+}
+.reclmdtxtbx.card{ gap:35px;}
+.reclmdtxtbx.card h3{text-align:left; margin-bottom:10px; color:#93bd3d;}
 /* MEDIA QUERY CSS STARTS HERE */
 @media only screen and (orientation:portrait){}
 @media screen and (max-width:1366px){}
