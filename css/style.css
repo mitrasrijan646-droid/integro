@@ -1089,7 +1089,7 @@ a:focus, a:hover {
 }
 .project-card img:hover { transform: scale(1.08);}
 .casebannr{
-	margin-top:-220px;
+	margin-top:-250px;
 	position:relative;
 	z-index:-1;
 }
