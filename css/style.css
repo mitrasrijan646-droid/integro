@@ -1505,6 +1505,7 @@ a:focus, a:hover {
 	background-attachment:fixed;
 	background-position:right bottom;
 	background-repeat:no-repeat;
+	background-size:cover;
 }
 .reclmtnbx{
 	display:flex;
