@@ -1476,6 +1476,7 @@ a:focus, a:hover {
 	background-attachment:fixed;
 	background-position:left bottom;
 	background-repeat:no-repeat;
+	background-size:cover;
 }
 .reclaimedsctn h1{
 	color:#FFF;
