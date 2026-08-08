@@ -365,7 +365,7 @@ a:focus, a:hover {
     min-height:100vh;
 }
 .innrbnnr .evntbxbnnr{min-height:70vh;}
-.bnnrsctn.innrbnnr .evntbxbnnr .bannrbx{top:0;}
+.bnnrsctn.innrbnnr .evntbxbnnr .bannrbx{top:60px;}
 .bnnrsctn.innrbnnr .evntbxbnnr .bannrbx h1{text-transform:uppercase;}
 .bnnrsctn .evntbxbnnr .imgbx{ width: 100%; height: 100%;}
 .bnnrsctn .evntbxbnnr .bannrbx {
@@ -1130,6 +1130,7 @@ a:focus, a:hover {
     transition: opacity 0.9s ease, transform 0.9s ease;
 	color:#9bc847;
 	font-size:70px;
+	line-height:80px;
 	font-family: "helvetica-neue-lt-pro",sans-serif;
 	font-weight:200;
 	text-align:left;
@@ -1148,7 +1149,7 @@ a:focus, a:hover {
 	border-radius:0;
 	display:flex;
 	flex-direction:column;
-	gap:25px;
+	gap:36px;
 	opacity: 0;
 	transform: translateY(30px);
     transition: opacity 0.9s ease, transform 0.9s ease;
@@ -1309,6 +1310,7 @@ a:focus, a:hover {
 	color:#93bd3d;
 	font-size:40px;
 	text-transform:uppercase;
+	line-height:46px;
 }
 .govrnanc-row .objctbx p{color:#FFF; font-weight:300;}
 .govrnanc-row .objctbx p a{color:#93bd3d; text-decoration:underline;}
@@ -1536,6 +1538,74 @@ a:focus, a:hover {
     transition: opacity 0.9s ease, transform 0.9s ease;
 }
 .natnlcntnr .gvrnancsctnbx h3.animate{opacity:1; transform: translateY(0px);}
+.videosctn #myVideo { width: 100%} 
+.videosctn{ margin-top:-1px;}
+/* container becomes the reference for absolute children */
+.videosctn .evntbx{ position: relative; overflow: hidden; min-height:100vh;}
+/* video sits behind everything, fills the section */
+.videosctn .imgbx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.videosctn #myVideo{ width: 100%; height: 100%; object-fit:cover;}
+/* text block floats above the video, normal flow (no top:170px) */
+.videosctn .bannrbx{
+    position: relative;
+    z-index: 2;
+    padding: 120px 0;   /* replaces the old top offset, adjust to taste */
+}
+.videosctn .bannrbx .bannrbxcntnt{  position: relative;  width: 100%;}
+/* make sure the white content card actually shows and text is legible */
+.videosctn .videocntntbx{
+    background: #f0f0f0;
+    padding: 30px;
+    color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:55px;
+	opacity: 0;
+	transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.videosctn .videocntntbx.animate{opacity:1; transform: translateY(0px);}
+.videosctn .videocntntbx h2{
+	color:#5b8407; 
+	text-align:left; 
+	font-weight:300; 
+	margin-bottom:20px;
+	opacity: 0;
+	transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.videosctn .videocntntbx h2.animate{opacity:1; transform: translateY(0px);}
+.videosctn .videocntntbx h1{
+	font-size:20px; 
+	margin:0; 
+	font-family: "helvetica-neue-lt-pro",sans-serif; 
+	font-weight:700; 
+	text-align:left;
+	opacity: 0;
+	transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.videosctn .videocntntbx h1.animate{opacity:1; transform: translateY(0px);}
+.videosctn .videocntntbx p{
+	opacity: 0;
+	transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.videosctn .videocntntbx p.animate{opacity:1; transform: translateY(0px);}
+.videocntntbx.casevideobx{background:transparent;}
+.videocntntbx.casevideobx h2{color:#FFF;}
+.videocntntbx.casevideobx h1{color:#FFF; font-size:30px;}
+.videocntntbx.casevideobx p{color:#93bd3d; font-size:7rem; line-height:7rem;}
+.videocntntbx.casevideobx a.dscvrbttnnew{background:#FFF; color:#000; font-weight:700; letter-spacing:1px;}
 /* MEDIA QUERY CSS STARTS HERE */
 @media only screen and (orientation:portrait){}
 @media screen and (max-width:1366px){}

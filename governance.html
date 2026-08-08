@@ -206,8 +206,8 @@
 				<div class="objctcntnr govrnanc-row">
 					<div class="objctbx">
 						<div>
-							<h4 class="greentxt">Our grand objective</h4>
-							<h3><span>Integro Mine Reclamation</span> Pvt. Ltd.</h3>
+							<!-- <h4 class="greentxt">Our grand objective</h4> -->
+							<h3><span>Integro Mine Reclamation</span><br/> Pvt. Ltd.</h3>
 						</div>
 						<div>
 							<p>Structure, oversight and operating policy — stated plainly, for readers evaluating Integro as an organisation rather than as a proposal.</p>
@@ -336,45 +336,57 @@
 	</div>
 </section>
 
-<section class="ap-section compliance" id="whatSection">
+<section class="videosctn">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 no-pad">
-				<!-- Regular img tag for parallax -->
-				<div class="ap-bg" id="whatBg">
-					<!-- <img src="images/video/compliance.jpg" alt="" class="" /> -->
-					<video id="myVideo" playsinline="playsinline" autoplay="" loop="" muted="" class="ap-bg-img">
-						<source src="video/regulatory.mp4" type="video/mp4">
-					</video>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-						
-							<div class="what-content">
-								<div class="ap-card" id="whatCard">
-									<div class="byndsctn compliancebox">
-										<div class="byndbx"></div>
-										<div class="byndbx">
-											<div class="whitebx bordradius">
-												<h2>05 · Regulatory alignment</h2>
-												<h1>Built to meet, not just reference, existing regulation.</h1>
-												<p>Integro's systems and advisory are built to align with Directorate General of Mines Safety requirements and applicable Indian environmental and mine closure regulation, including the framework set out under the Mines and Minerals (Development and Regulation) Act and the Coal Controller Organisation's mine closure guidelines. Full detail on how this operates day to day sits on Our Approach; this page confirms the commitment as a matter of governance, not just practice.</p>
+				<div class="owl-carousel-one owl-theme aos-init aos-animate" data-aos="">
+				
+					<div class="item aos-init aos-animate" data-aos="">
+						<div class="evntbx">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-6 col-md-offset-6 col-sm-offset-5">
+										<div class="bannrbx">
+											<div class="bannrbxcntnt">
+												<div class="videocntntbx bordradius">
+													<div>
+														<h2>05 · Regulatory alignment</h2>
+														<h1>Built to meet, not just reference, existing regulation.</h1>
+													</div>
+													<div>
+														<p>Integro's systems and advisory are built to align with Directorate General of Mines Safety requirements and applicable Indian environmental and mine closure regulation, including the framework set out under the Mines and Minerals (Development and Regulation) Act and the Coal Controller Organisation's mine closure guidelines. Full detail on how this operates day to day sits on Our Approach; this page confirms the commitment as a matter of governance, not just practice.</p>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
+									<div class="clearfix"></div>
 								</div>
 							</div>
+
 							<div class="clearfix"></div>
+
+							<div class="imgbx visible-lg visible-md ">
+								<video id="myVideo" playsinline autoplay muted loop>
+									<source src="video/regulatory.mp4" type="video/mp4">
+								</video>
+							</div>
+							
+							<div class="imgbx visible-sm visible-xs">
+								<video id="myVideo" playsinline="" autoplay="" muted="" loop="">
+									<source src="video/regulatory-mb.mp4" type="video/mp4">
+								</video>
+							</div>
 							
 						</div>
 					</div>
+					
 				</div>
 				<div class="clearfix"></div>
 			</div>
 		</div>
 	</div>
-    <!-- Card content -->
 </section>
 
 <!-- InstanceEndEditable -->
@@ -584,34 +596,9 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 
 // observe h1 also
-document.querySelectorAll('.objctbx h4, .objctbx h3, .objctbx p, .prtnrbx h4, .prtnrbx h1, .prtnrbx p, .card, .card span, .card h4, .card p, .fldsctn h2, .visnsctn h2, .visnsctn h1, .visnsctn img.reprimg, .fndrbx h1, .fndrbx h4, .fndrcntnr p, .gvrnancsctn h2, .gvrnancsctnbx h1, .gvrnancsctnbx ul li, .worksctnbx h1, .prgrphbx, .lower-footer .gvrnancsctnbx h3, .observation .num, .observation .num span, .observation .txtbx, .observation .txtbx h3, .observsctnbx .tllbx:before, .policies-sectn h3, .policies-sectn h1, .policiesbox, .policiesbox p, .lowersctn h2, .lowersctn h1, .byndsctn .whitebx, .govrnance-wrapper-box h2, .conduct-section h2, .green-wrapper-box p, .green-wrapper-box h2').forEach(el => {
+document.querySelectorAll('.objctbx h4, .objctbx h3, .objctbx p, .prtnrbx h4, .prtnrbx h1, .prtnrbx p, .card, .card span, .card h4, .card p, .fldsctn h2, .visnsctn h2, .visnsctn h1, .visnsctn img.reprimg, .fndrbx h1, .fndrbx h4, .fndrcntnr p, .gvrnancsctn h2, .gvrnancsctnbx h1, .gvrnancsctnbx ul li, .worksctnbx h1, .prgrphbx, .lower-footer .gvrnancsctnbx h3, .observation .num, .observation .num span, .observation .txtbx, .observation .txtbx h3, .observsctnbx .tllbx:before, .policies-sectn h3, .policies-sectn h1, .policiesbox, .policiesbox p, .lowersctn h2, .lowersctn h1, .byndsctn .whitebx, .govrnance-wrapper-box h2, .conduct-section h2, .green-wrapper-box p, .green-wrapper-box h2, .videosctn .videocntntbx, .videosctn .videocntntbx h1, .videosctn .videocntntbx h2, .videosctn .videocntntbx p').forEach(el => {
     observer.observe(el);
 });
-</script>
-<script type="text/javascript">
-/* ── What Section Parallax ── */
-{
-    const section = document.getElementById('whatSection');
-    const card    = document.getElementById('whatCard');
-    const bg      = document.getElementById('whatBg');
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) card.classList.add('visible');
-        });
-    }, { threshold: 0.55 });
-    observer.observe(section);
-
-    function doParallaxWhat() {
-        const rect     = section.getBoundingClientRect();
-        const viewH    = window.innerHeight;
-        const progress = (viewH - rect.top) / (viewH + rect.height);
-        const shift    = (progress - 0.5) * 400;
-        bg.style.transform = `translateY(${shift}px)`;
-    }
-    doParallaxWhat();
-    window.addEventListener('scroll', doParallaxWhat, { passive: true });
-}
 </script>
 <!-- InstanceEndEditable -->
 </body>
