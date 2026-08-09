@@ -1606,6 +1606,32 @@ a:focus, a:hover {
 .videocntntbx.casevideobx h1{color:#FFF; font-size:30px;}
 .videocntntbx.casevideobx p{color:#93bd3d; font-size:7rem; line-height:7rem;}
 .videocntntbx.casevideobx a.dscvrbttnnew{background:#FFF; color:#000; font-weight:700; letter-spacing:1px;}
+.iti__dropdown-content { background-color: #fff !important;}
+.iti__country-list { background-color: #fff !important;}
+.iti__country {
+    color: #111 !important;
+    background-color: #fff !important;
+    opacity: 1 !important;
+}
+.iti__country-name,
+.iti__dial-code {
+    color: #111 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+.iti__country:hover,
+.iti__country.iti__highlight {background-color: #f0f0f0 !important; color: #111 !important;}
+.iti__search-input {color: #111 !important; background-color: #fff !important;}
+.iti--inline-dropdown .iti__country-list{
+	max-height:250px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    margin-top: -14px;
+}
+.iti{width:100%;}
+.gvrnancsctnbx ul li span.iti__country-name{font-weight:300;}
+.gvrnancsctnbx ul li.iti__country{font-size:15px; line-height:16px;}
 /* MEDIA QUERY CSS STARTS HERE */
 @media only screen and (orientation:portrait){}
 @media screen and (max-width:1366px){}

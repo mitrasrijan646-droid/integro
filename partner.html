@@ -14,7 +14,7 @@
 <noscript><link rel="stylesheet" href="css/style.css"></noscript>
 <link href="css/font.css" rel="stylesheet" media="all">
 <!-- InstanceBeginEditable name="head" -->
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.1/build/css/intlTelInput.css">
 <!-- InstanceEndEditable -->
 </head>
 
@@ -486,6 +486,29 @@ gsap.to(".logo-parallax", {
 </script>
 
 <!-- InstanceBeginEditable name="EditRegion6" -->
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.1/build/js/intlTelInput.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const phoneInput = document.querySelector("#phone");
+    const iti = window.intlTelInput(phoneInput, {
+        initialCountry: "in",
+        separateDialCode: true,
+        loadUtils: () => import("https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.1/build/js/utils.js")
+    });
+
+    const form = document.querySelector(".formcontnrbox");
+
+    form.addEventListener('submit', function (e) {
+        if (!iti.isValidNumber()) {
+            e.preventDefault();
+            alert('Please enter a valid phone number.');
+            phoneInput.focus();
+            return;
+        }
+        phoneInput.value = iti.getNumber();
+    });
+});
+</script>
 <script type="text/javascript">
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -502,6 +525,7 @@ document.querySelectorAll('.objctbx h4, .objctbx h3, .objctbx p, .prtnrbx h4, .p
     observer.observe(el);
 });
 </script>
+
 <!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>
