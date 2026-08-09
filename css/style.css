@@ -1506,7 +1506,12 @@ a:focus, a:hover {
     flex: 0 32%;
 }
 .reclaimedsctn .partner-section .plningcntnrbx.card h3{color:#93bd3d; font-size:16px; font-weight:200;}
-.reclaimedsctn .partner-section .plningcntnrbx.card img{left: 290px; top:-45px;}
+.reclaimedsctn .partner-section .plningcntnrbx.card img{
+	margin-left:22vw;
+    margin-top: 30px;
+    left: 0;
+    right: 0;
+}
 .reclmtn-section{
 	background-image:url(../images/approach/mining-plan-img.jpg);
 	background-attachment:fixed;
