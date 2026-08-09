@@ -1622,6 +1622,7 @@ a:focus, a:hover {
 	.observsctn{grid-template-columns: 1fr; }
 	.observsctn .observsctnbx{gap:10px;}
 	.coalsctn#whatSection{min-height:150vh;}
+	.videocntntbx.casevideobx p{font-size: 40px; line-height: 45px;}
 }
 @media screen and (max-width:540px){}
 @media (max-width:480px){
