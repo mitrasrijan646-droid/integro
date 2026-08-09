@@ -13,6 +13,7 @@
 <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="css/style.css"></noscript>
 <link href="css/font.css" rel="stylesheet" media="all">
+<link href="css/mobile-nav.css" rel="stylesheet" media="all">
 <!-- TemplateBeginEditable name="head" -->
 
 <!-- TemplateEndEditable -->
@@ -64,84 +65,37 @@
 
 <div class="slider-opacity"></div>
 
-<div class="mobile-header visible-md visible-sm visible-xs" id="">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12">
-            
-				<div class="col-sm-6 col-xs-6 no-pad">
-					<div class="logoBox">
-						<a class="navbar-brand" href="../index.html" id="">
-							<img src="images/logo-new.png" class="img-responsive logo-parallax" alt="" id="siteLogo"/>
-                           <!-- <img src="images/logo-white.svg" class="img-responsive logo-parallax" alt=""/>-->
-						</a>
-					</div>
-				</div>
-                
-                <div class="col-sm-6 col-xs-6 no-pad">
-                	<div id="main">
-                   		<button class="openbtn" onclick="openNav()">
-                            <img src="images/mobile-nav.png" class="img-responsive logo-parallax" alt=""/>
-                        </button>
-                        <p class="logo-parallax"><a href="https://www.instagram.com/earthenstudio_/" target="_blank">Instagram</a></p>
-                        <div class="clearfix"></div>
-                	</div>
-                </div>
-                
-                <div class="clearfix"></div>
-				
-				<div class="col-xs-6 col-sm-7 no-pad">
-					<div class="navigatnBox">
-						<div id="mySidebar" class="sidebar">
-                        	
-                            <div class="menu">
-
-                      <div class="panel-left">
-                    
-                        <a class="logo" href="../index.html">
-                        	<img src="images/logo.svg" class="img-responsive" alt=""/>
-                        </a>
-                    
-                        <nav class="links">
-                          <a href="../index.html"><span class="idx">01</span>Home</a>
-                          <a href="../project.html"><span class="idx">02</span>Projects</a>
-                          <a href="../service.html" class="group-gap"><span class="idx">03</span>Services</a>
-                          <a href="../about.html"><span class="idx">04</span>About Us</a>
-                          <a href="../contact.html"><span class="idx">05</span>Contact Us</a>
-                        </nav>
-                    
-                        <div class="panel-footer">
-                          <div class="label">Follow:</div>
-                          <a class="social" href="https://www.instagram.com/earthenstudio_/" target="_blank">Instagram</a>
-                        </div>
-                    
-                      </div>
-                    
-                      <div class="panel-right">
-                        <button class="close-btn" type="button" aria-label="Close menu" onclick="closeNav()">
-                          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-                          </svg>
-                          CLOSE
-                        </button>
-                      </div>
-                    
-                    </div>
-                            
-                            
-                            <div class="clearfix"></div>
-						</div>
-                        <div class="clearfix"></div>
-					</div>
-                    <div class="clearfix"></div>
-				</div>
-                
-                
-                
-				<div class="clearfix"></div>
-			</div>
-		</div>
-	</div>
+<div class="mobile-container visible-md visible-sm visible-xs" id="">
+	<header class="site-header">
+      	<a href="../index.html" class="logo">
+      		<img src="images/logo-new.png" class="img-responsive logo-parallax" alt="" id="siteLogo"/>
+      	</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+        </button>
+	</header>
+    
+    <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
+       <div class="mobile-nav__inner">
+        	<ul class="mobile-nav__list">
+              <li><a href="../index.html"><span>01</span>Home</a></li>
+              <li><a href="../about.html"><span>02</span>About</a></li>
+              <li><a href="../governance.html"><span>03</span>Governance & Policies</a></li>
+              <li><a href="../our-approach.html"><span>04</span>Our Approach</a></li>
+              <li><a href="../case-study.html"><span>05</span>Just Transition Case Study</a></li>
+              <li><a href="../data-impact.html"><span>06</span>Data & Impact</a></li>
+              <li><a href="../partner.html"><span>07</span>Partner with us</a></li>
+        	</ul>
+       </div>
+       
+       <div class="mobile-nav__footer">
+           <span>Follow:</span>
+           <a href="https://www.linkedin.com/company/integro-mine-reclamation" target="_blank">Linkedin</a>
+       </div>
+       
+    </nav>
 </div>
 
 <!-- TemplateBeginEditable name="banner" -->
@@ -179,7 +133,7 @@
                         	<h4>RESOURCES</h4>
                             <ul>
                             	<li><a href="../data-impact.html">Data & Impact</a></li>
-                                <li><a href="../partner.html">Partner With Us</a></li>
+                                <li><a href="../governance.html">Governance & Policies</a></li>
                             </ul>
                         </div>
                         
@@ -187,7 +141,7 @@
                         	<h4>Connect</h4>
                             <ul>
                             	<li><a href="../partner.html">Contact</a></li>
-                                <li><a href="../partner.html">Partner With Us</a></li>
+                                <li><a href="https://www.linkedin.com/company/integro-mine-reclamation" target="_blank">Linkedin</a></li>
                             </ul>
                         </div>
                         
@@ -252,28 +206,44 @@ $(window).on("load resize", function() {
 </script>
 
 <script type="text/javascript">
-function openNav() {
-	document.querySelector('.openbtn').classList.toggle('active');
-	document.getElementById("mySidebar").classList.add("open");
-}
-function closeNav() {
-	document.getElementById("mySidebar").classList.remove("open");
-}
-</script>
+var toggle = document.getElementById('menuToggle');
+var nav = document.getElementById('mobileNav');
+var links = nav.querySelectorAll('.mobile-nav__list a');
 
-<script>
-	document.addEventListener('DOMContentLoaded', function () {
-    var currentPage = window.location.pathname.split('/').pop().replace('.html', '');
-    if (currentPage === '' || currentPage === 'index') {
-        currentPage = 'index';
-    }
+function openNav(){
+  nav.classList.add('is-open');
+  toggle.classList.add('is-active');
+  toggle.setAttribute('aria-expanded','true');
+  toggle.setAttribute('aria-label','Close menu');
+  nav.setAttribute('aria-hidden','false');
+  document.body.classList.add('nav-open');
+}
 
-    document.querySelectorAll('.nav.navbar-nav li a').forEach(function (link) {
-        var linkPage = link.getAttribute('href').split('/').pop().replace('.html', '');
-        if (linkPage === currentPage) {
-            link.parentElement.classList.add('active');
-        }
-    });
+function closeNav(){
+  nav.classList.remove('is-open');
+  toggle.classList.remove('is-active');
+  toggle.setAttribute('aria-expanded','false');
+  toggle.setAttribute('aria-label','Open menu');
+  nav.setAttribute('aria-hidden','true');
+  document.body.classList.remove('nav-open');
+}
+
+toggle.addEventListener('click', function(){
+  if (nav.classList.contains('is-open')) {
+    closeNav();
+  } else {
+    openNav();
+  }
+});
+
+links.forEach(function(a){
+  a.addEventListener('click', function(){
+    closeNav();
+  });
+});
+
+document.addEventListener('keydown', function(e){
+  if (e.key === 'Escape' && nav.classList.contains('is-open')) closeNav();
 });
 </script>
 
@@ -291,7 +261,7 @@ $(function() {
 });
 
 $(function() {
-    var header = $(".mobile-header");
+    var header = $(".mobile-container");
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
         if (scroll >= 10) {
