@@ -1556,7 +1556,7 @@ a:focus, a:hover {
 .videosctn .bannrbx{
     position: relative;
     z-index: 2;
-    padding: 120px 0;   /* replaces the old top offset, adjust to taste */
+    padding:60px 0;   /* replaces the old top offset, adjust to taste */
 }
 .videosctn .bannrbx .bannrbxcntnt{  position: relative;  width: 100%;}
 /* make sure the white content card actually shows and text is legible */
