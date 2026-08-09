@@ -1541,7 +1541,7 @@ a:focus, a:hover {
 .videosctn #myVideo { width: 100%} 
 .videosctn{ margin-top:-1px;}
 /* container becomes the reference for absolute children */
-.videosctn .evntbx{ position: relative; overflow: hidden; min-height:100vh;}
+.videosctn .evntbx{ position: relative; overflow: hidden; }
 /* video sits behind everything, fills the section */
 .videosctn .imgbx{
     position: absolute;
