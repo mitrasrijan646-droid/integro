@@ -1655,22 +1655,68 @@ a:focus, a:hover {
 	}
 	.bnnrbxtxt:last-child{justify-content: flex-start;}
 	#whatSection .ap-card{grid-template-columns: 2fr 1fr;}
+	.grey-section .ap-card{grid-template-columns: repeat(1, 1fr);}
+	.plningcntnr{grid-template-columns:1fr;}
+	.delivrcntnr{height:100%;}
+	.cta-content-box{grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));}
+	.reclaimedsctn .partner-section{justify-content: flex-start;}
+	.reclaimedsctn .partner-section .plningcntnrbx.card{flex:1 32%;}
+	.reclaimedsctn{justify-items: flex-start;}
+	.reclaimedsctn h1{font-size:40px;}
+	.reclaimedsctn .partner-section .plningcntnrbx.card img{left:250px;}
+	.govrnance-wrapper{grid-template-columns: 1fr 1fr; gap: 17px;}
+	.partner-section{grid-template-columns: 1fr; gap: 100px;}
+	.projects-gallery{grid-template-columns: repeat(2, 1fr); padding: 0 0;}
+	.datasctn .objctcntnr{ grid-template-columns: 1fr; gap: 30px;} 
+	.datasctn .tllbx{width:100%;}
+	.policies-sectn h1{font-size:40px; line-height:45px;}
+	.coalsctn#whatSection{min-height:100vh;}
+	.byndsctn{grid-template-columns:1fr;}
+	.coalsctn#whatSection .ap-bg img {  object-fit: cover;  object-position: 50%;}
+	.lowersctn h1{font-size:40px;}
+	.circulr-section{grid-template-columns: repeat(2, 1fr);}
+	.blacksctncntnr h1{font-size:40px;}
+	.blacksctncntnr{
+		/* justify-content: start; */
+        display: flex;
+        flex-direction: column;
+	}
+	.coalsctn#whatSection .byndsctn h1{font-size:50px;}
+	.natnlcntnr .gvrnancsctn{grid-template-columns:1fr;}
+	.gvrnancsctnbx{gap:30px;}
+	.natnlcntnr .gvrnancsctnbx h1{font-size:70px;}
+	.formcontnr{grid-template-columns:1fr;}
+	.formcontnr .gvrnancsctnbx{gap:20px;}
+	.notebx{width:100%;}
 }
 @media screen and (max-width:767px){
+	.bnnrsctn.innrbnnr .evntbxbnnr { min-height: 50vh;}
 	.bnnrbxtxt:last-child{flex-direction: column;}
-	.cta-content{grid-template-columns:1fr;}
+	.cta-content{grid-template-columns:1fr; gap:0; padding-bottom:30px;}
 	.footerwrpr{grid-template-columns: 2fr 1fr;}
 	.objctcntnr{grid-template-columns:1fr;}
 	.cta-stripes{width:50%;}
-	.fldsctn .objctcntnr {
-    grid-template-columns: 1fr;
-    gap: 40px;
-}
+	.fldsctn .objctcntnr { grid-template-columns: 1fr; gap: 40px;}
+	.deep-blue .objctcntnr{grid-template-columns: 1fr;}
+	.visnsctn .objctcntnr{grid-template-columns: 1fr;}
+	.gapsctn#whatSection .ap-card{grid-template-columns: 1fr;}
+	.gvrnancsctn{grid-template-columns: 1fr;}
+	.reclaimedsctn .partner-section .plningcntnrbx.card img{ position:inherit;}
+	.lwrftr p{text-align:center;}
+	.lwrftr p.last-child{text-align:center;}
+	.govrnance-wrapper{grid-template-columns: 1fr; gap:50px;}
+	.green-wrapper{grid-template-columns: 1fr; gap:30px;}
+	.observsctn{grid-template-columns: 1fr; }
+	.observsctn .observsctnbx{gap:10px;}
+	.coalsctn#whatSection{min-height:150vh;}
 }
 @media screen and (max-width:540px){}
 @media (max-width:480px){
 	#whatSection .ap-card { grid-template-columns: 1fr;}
     .bnnrbxtxt h1{font-size:30px;}
+	.coalsctn#whatSection{min-height:120vh;}
+	.bnnrsctn.innrbnnr .evntbxbnnr .bannrbx h1{font-size:40px;}
+	.form-grid{grid-template-columns:1fr;}
 }
 @media (max-width:390px){}
 @media (max-width:375px){}
