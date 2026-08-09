@@ -1438,8 +1438,9 @@ a:focus, a:hover {
 	color:#262827;
 	font-size:15px;
 	font-family: "helvetica-neue-lt-pro",sans-serif;
+	border-radius:6px;
 }
-.input-box.textarea-box select{
+.input-box select{
 	width:100%;
 	border:none;
 	height:50px;
@@ -1450,6 +1451,7 @@ a:focus, a:hover {
 	font-family: "helvetica-neue-lt-pro",sans-serif;
 	text-transform:uppercase;
 	color:#262827;
+	border-radius:6px;
 }
 .input-box.textarea-box textarea{
 	width:100%;
@@ -1460,6 +1462,7 @@ a:focus, a:hover {
 	font-size:15px;
 	font-family: "helvetica-neue-lt-pro",sans-serif;
 	color:#262827;
+	border-radius:6px;
 }
 .submit-btn{
 	background: #76a712;
