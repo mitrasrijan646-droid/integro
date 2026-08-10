@@ -787,6 +787,7 @@ a:focus, a:hover {
 	transform: translateY(30px);
     transition: opacity 0.9s ease, transform 0.9s ease;
 }
+.worksctnbx h1 span{color:#93bc3d;}
 .worksctnbx h1.animate{opacity: 1; transform: translateY(0px);}
 .worksctnbx a.dscvrbttnnew{
 	background:#5b8407;
@@ -1166,6 +1167,12 @@ a:focus, a:hover {
 	font-size:100px;
 	font-family: "helvetica-neue-lt-pro",sans-serif;
 	font-weight:300;
+	margin:0;
+}
+.blacksctncntnr h4{
+	font-size:14px;
+	font-weight:700;
+	color:#FFFF;
 }
 .circulr-section{
 	display:grid;
