@@ -1154,6 +1154,8 @@ a:focus, a:hover {
 	background-attachment:fixed;
 	background-position:left bottom;
 	background-repeat:no-repeat;
+	padding-bottom:130px;
+	padding-top:130px;
 }
 .blacksctncntnr{
 	display: grid;
@@ -1171,7 +1173,7 @@ a:focus, a:hover {
 }
 .blacksctncntnr h4{
 	font-size:14px;
-	font-weight:700;
+	font-weight:400;
 	color:#FFFF;
 }
 .circulr-section{
