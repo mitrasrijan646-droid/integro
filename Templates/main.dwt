@@ -157,8 +157,8 @@
     	<div class="container">
         	<div class="row">
             	<div class="col-md-12">
-                	<div class="col-sm-6"><p>© 2026 Integro Mine Reclamation Pvt. Ltd. All rights reserved.</p></div>
-                    <div class="col-sm-6"><p class="last-child">An Erma Consulting-designed brand ecosystem.</p></div>
+                	<div class="col-sm-6 no-pad"><p>© 2026 Integro Mine Reclamation Pvt. Ltd. All rights reserved.</p></div>
+                    <div class="col-sm-6 no-pad"><p class="last-child">An Erma Consulting-designed brand ecosystem.</p></div>
                 	<div class="clearfix"></div>
                 </div>
             </div>
@@ -202,6 +202,24 @@ $(window).on("load resize", function() {
   } else {
     $dropdown.off("mouseenter mouseleave");
   }
+});
+</script>
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+    var currentPage = window.location.pathname.split('/').pop().replace('.html', '');
+    if (currentPage === '' || currentPage === 'index') {
+        currentPage = 'index';
+    }
+
+    // only target the top level nav links, not dropdown items
+    document.querySelectorAll('.nav.navbar-nav > li > a, .nav.navbar-nav > li > .nav-dropdown > a').forEach(function (link) {
+        var href = link.getAttribute('href');
+        if (!href || href === '#') return; // skip empty links
+        var linkPage = href.split('/').pop().replace('.html', '');
+        if (linkPage === currentPage) {
+            link.closest('li').classList.add('active');
+        }
+    });
 });
 </script>
 

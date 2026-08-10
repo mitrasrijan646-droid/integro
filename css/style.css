@@ -534,7 +534,7 @@ a:focus, a:hover {
         top: 0;
         right: 0;
         bottom: 0;
-        width:15%;
+        width:5%;
         display: flex;
         z-index: 0;
         pointer-events: none;
@@ -1409,16 +1409,19 @@ a:focus, a:hover {
 	margin-top:0;
 }
 .reclaimedsctn .partner-section .plningcntnrbx.card {
+	position:relative;
     padding-top:40px;
     gap: 20px;
     flex: 0 32%;
+	overflow: visible;
 }
-.reclaimedsctn .partner-section .plningcntnrbx.card h3{color:#93bd3d; font-size:16px; font-weight:200;}
+.reclaimedsctn .partner-section .plningcntnrbx.card h3{color:#93bd3d; font-size:16px; font-weight:700;}
 .reclaimedsctn .partner-section .plningcntnrbx.card img{
-	margin-left:22vw;
-    margin-top: 30px;
-    left: 0;
-    right: 0;
+	position: absolute;
+    top: -35px;              /* how far it pokes above the card */
+    right:20px;             /* distance from the card's right edge, not the viewport's */
+    margin: 0;
+	left:auto;
 }
 .reclmtn-section{
 	background-image:url(../images/approach/mining-plan-img.jpg);
