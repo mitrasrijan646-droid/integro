@@ -1632,6 +1632,7 @@ a:focus, a:hover {
 	.coalsctn#whatSection{min-height:120vh;}
 	.bnnrsctn.innrbnnr .evntbxbnnr .bannrbx h1{font-size:40px;}
 	.form-grid{grid-template-columns:1fr;}
+	.reclaimedsctn .partner-section{gap:60px;}
 	.bnnrsctn .evntbxbnnr .bannrbx .bannrbxcntnt a.dscvrbttnnew{margin: 20px 8px 25px 0;}
 }
 @media (max-width:390px){}
