@@ -1580,7 +1580,6 @@ a:focus, a:hover {
 	.reclaimedsctn .partner-section .plningcntnrbx.card{flex:1 32%;}
 	.reclaimedsctn{justify-items: flex-start;}
 	.reclaimedsctn h1{font-size:40px;}
-	.reclaimedsctn .partner-section .plningcntnrbx.card img{display:none;}
 	.govrnance-wrapper{grid-template-columns: 1fr 1fr; gap: 17px;}
 	.partner-section{grid-template-columns: 1fr; gap: 100px;}
 	.projects-gallery{grid-template-columns: repeat(2, 1fr); padding: 0 0;}
@@ -1617,7 +1616,6 @@ a:focus, a:hover {
 	.visnsctn .objctcntnr{grid-template-columns: 1fr;}
 	.gapsctn#whatSection .ap-card{grid-template-columns: 1fr;}
 	.gvrnancsctn{grid-template-columns: 1fr;}
-	.reclaimedsctn .partner-section .plningcntnrbx.card img{ display:none;}
 	.lwrftr p{text-align:center;}
 	.lwrftr p.last-child{text-align:center;}
 	.govrnance-wrapper{grid-template-columns: 1fr; gap:50px;}
