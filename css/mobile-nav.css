@@ -16,34 +16,6 @@
     font-family:'Inter',sans-serif;
     min-height:100vh;
   }
-
-  /* ---------- demo page dressing ---------- */
-  .demo-hero{
-    padding:120px 24px 80px;
-    max-width:520px;
-  }
-  .demo-hero .eyebrow{
-    font-size:12px;
-    letter-spacing:.12em;
-    text-transform:uppercase;
-    color:var(--muted);
-    display:block;
-    margin-bottom:18px;
-  }
-  .demo-hero h1{
-    font-family:'Fraunces',serif;
-    font-weight:500;
-    font-size:clamp(30px,8vw,42px);
-    line-height:1.1;
-    margin:0 0 18px;
-  }
-  .demo-hero p{
-    color:var(--muted);
-    line-height:1.6;
-    font-size:15px;
-    margin:0;
-  }
-
   /* ---------- header ---------- */
   .site-header{
    /*  position:fixed; */
@@ -61,7 +33,6 @@
     z-index:60;
     position:relative;
   }
-
   /* ---------- toggle ---------- */
   .menu-toggle{
     width:32px;
@@ -85,11 +56,9 @@
   .menu-toggle .bar:nth-child(1){ top:2px; }
   .menu-toggle .bar:nth-child(2){ top:9px; }
   .menu-toggle .bar:nth-child(3){ top:16px; }
-
   .menu-toggle.is-active .bar:nth-child(1){ top:9px; transform:rotate(45deg); }
   .menu-toggle.is-active .bar:nth-child(2){ opacity:0; }
   .menu-toggle.is-active .bar:nth-child(3){ top:9px; transform:rotate(-45deg); }
-
   /* ---------- overlay ---------- */
   .mobile-nav{
     position:fixed;
@@ -101,6 +70,7 @@
     transition:opacity .45s var(--ease), visibility 0s linear .45s;
     display:flex;
     flex-direction:column;
+	height: 100vh;
   }
   .mobile-nav.is-open{
     opacity:1;
